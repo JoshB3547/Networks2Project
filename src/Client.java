@@ -36,7 +36,7 @@ public class Client {
 			
 			  do{
 
-				System.out.println("Pls Enter a IP address and PortNumber for the server, like:\nA. <IPAddress>:<PortNumber>. Example: “123.456.678:9999");	 
+				System.out.println("Pls Enter a IP address and PortNumber for the server, like:\nA. <IPAddress>:<PortNumber>. Example: 123.456.678:9999");	 
 				connectionText = scanner.nextLine();
 
 			  } while(client.checkConnection(connectionText));

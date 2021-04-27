@@ -26,11 +26,6 @@ public class Node {
 		node.addKeyValue("1", "69");
 		System.out.println(node.keyValueMap.get("1"));
 
-
-
-
-
-
 	    try{
 	      // Instantiate a new DatagramSocket to receive responses from the client
 	      DatagramSocket serverSocket = new DatagramSocket(SERVICE_PORT);
@@ -49,7 +44,7 @@ public class Node {
 	      serverSocket.receive(inputPacket);
 	      
 	      // Printing out the client sent data
-	      String receivedData = new String(inputPacket.getData());
+	      String receivedData = new String(inputPacket.getData()).trim();
 	      System.out.println("Sent from the client: "+receivedData);
 
 
